@@ -43,13 +43,13 @@
   text-align: center;
   background-color: var(--card-bg-color);
   margin-block-end: 102px;
-  grid-column: 2 / auto;
+  margin-block-start:100px;
   outline: var(--outline);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 354px;
+  height: 365px;
 }
 
 .header-title {
@@ -102,9 +102,8 @@ main {
 /*Лейбл*/
 .lable {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  text-transform: uppercase;
+  top: 25px;
+  right: 25px;
   font-family: var(--accent-font);
   font-size: var(--accent-font-button-size);
   color: #000;
