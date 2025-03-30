@@ -395,19 +395,32 @@ main {
 
 @media (width <= 375px) {
   .page {
-    max-width: 375px;
     inline-size: var(--mob-width);
+    min-inline-size: 375px;
   }
-
+  .header{
+    width: 100%;
+  }
   .content-section {
     max-width: 100%;
   }
 
   .img-logo img {
-    min-width: 375px;
-    width: 375px;
+    height: 100%;
+    width: 100%;
   }
 
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (width <= 694px){
+  .img-logo img {
+    height: 100%;
+    width: 100%;
+  }
   .card {
     width: 100%;
   }
