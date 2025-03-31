@@ -13,18 +13,21 @@
 
 /*Стилизация кнопки Like*/
 
+.button-initial-styles{
+  box-shadow: initial;
+  background-color: initial;
+  border: initial;
+  cursor: pointer;
+}
+
 .card__like-button {
-    box-shadow: initial;
-    background-color: initial;
-    border: initial;
     font-family: var(--accent-font);
-    padding: 12px 37px;
+    /*padding: 12px 37px;*/
     outline: var(--outline);
-    cursor: pointer;
     position: relative;
     overflow: hidden;
-    max-inline-size: 130px;
-    max-block-size: 38px;
+    inline-size: 130px;
+    block-size: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +51,35 @@
     top: 0px;
   }
 
+  
+.like-icon{
+  width: 39px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.like-icon:focus{
+outline: none;
+}
+
+.like-icon:focus-visible{
+  outline: 2px solid #000;
+}
+
+
+
+
   .button__text {
     mix-blend-mode: difference;
     color: #fff;
     position: relative;
     z-index: 2;
   }
+
+
 
 
   /*Анимация :hover*/

@@ -14,7 +14,7 @@
 
 .page {
   font-family: var(--main-font);
-  font-variation-settings: "wdth" var(--font-weight-card-text);
+  font-variation-settings: 'wght' var(--font-weight-card-text);
   inline-size: var(--desktop-width);
   background-color: blanchedalmond;
   color: var(--font-color);
@@ -43,13 +43,13 @@
   text-align: center;
   background-color: var(--card-bg-color);
   margin-block-end: 102px;
-  margin-block-start:100px;
+  margin-block-start: 100px;
   outline: var(--outline);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 365px;
+  padding: 127px 0;
 }
 
 .header-title {
@@ -87,17 +87,15 @@ main {
   margin-block-start: 50px;
 }
 .card-title {
-  font-size: var(--card-font-size);
+  font-variation-settings: 'wght' var(--font-weight-card-title);
   padding: 5px 10px;
+  font-size: 18px;
 }
 .card-text {
   font-size: var(--card-font-size);
   padding: 21px 25px 3px 25px;
 }
-.card-img {
-  height: 100%;
-  width: 100%;
-}
+
 
 /*Лейбл*/
 .lable {
@@ -114,9 +112,11 @@ main {
   opacity: 0.5;
 }
 
-@supports (text-stroke: var(--text-stroke)) {
+@supports (text-stroke: var(--text-stroke)) or (-webkit-text-stroke: var(--text-stroke)) {
   .lable {
     text-stroke: var(--text-stroke);
+    text-stroke: var(--text-stroke);
+    text-shadow:none;
   }
 }
 
@@ -133,58 +133,45 @@ main {
   row-gap: 10px;
   margin-right: 25px;
   padding: 22px 2px;
+  align-items: center;
 }
 
 .card__icon-button {
-  box-shadow: initial;
-  background-color: initial;
-  border: initial;
   outline: initial;
-  cursor: pointer;
 }
 
 /*Стилизация кнопки Like*/
-
-
 
 /*Стилизация нижней кнопки*/
 
 .card__text-button {
   font-family: var(--accent-font);
-  /*padding: 12px 37px;*/
-  outline: var(--outline);
-  box-shadow: initial;
-  background-color: initial;
-  border: initial;
-  outline: initial;
+  /*outline: var(--outline);*/
   font-family: var(--accent-font);
   font-size: var(--accent-font-button-size);
   text-align: left;
   line-height: 1.5em;
-  cursor: pointer;
   display: flex;
   gap: 10px;
-  padding: 20px;
+  padding:18px 19px;
   justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-.nowrap-text{
-  white-space: nowrap;
-}
 
 .card__text-button:hover::after {
   cursor: pointer;
   transform: translateX(0);
 }
 
-.card__text-button::after {
+
+.button-black-affect::after{
   content: "";
   display: block;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #000;
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
   position: absolute;
@@ -208,9 +195,9 @@ main {
   outline: 2px solid #000;
 }
 
-.card__text-button:focus {
-  outline: none;
-}
+
+
+
 
 .ok-button:focus-visible {
   box-shadow: 4px 4px 0 #000;
@@ -251,7 +238,7 @@ main {
   margin-block-end: 103px;
 }
 
-.footer-content {
+.save-button-content {
   outline: var(--outline);
   max-inline-size: 335px;
   margin: 0 auto;
@@ -260,8 +247,9 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--card-bg-color);
-  cursor: pointer;
-  max-block-size: 55px;
+  margin-block-start: 54px;
+  margin-block-end:105px;
+
 }
 
 .button__text-floppy {
@@ -272,53 +260,48 @@ main {
   mix-blend-mode: difference;
   color: #fff;
   z-index: 2;
+  cursor: pointer;
+  outline: 2px solid #000 !important;
 }
 
-.button__text::after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(-100%);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
+
+
+
 
 .button__text::after:hover {
   transform: translateX(0%);
 }
 
 .card__floppy-button {
-  box-shadow: initial;
-  background-color: initial;
-  border: initial;
   outline: initial;
   padding: 0;
+  pointer-events: none;
 }
 
 /*Вставьте дискету*/
 
 .button-save {
   text-transform: uppercase;
-  white-space:initial;
+  white-space: initial;
   font-size: var(--accent-font-button-size);
+  pointer-events: none;
 }
 
 .ok-button {
   width: 100%;
   text-transform: uppercase;
-  outline: var(--outline);
-  padding: 12.5px;
+  outline: 2px solid #000;
+  padding: 8px 10px;
   text-align: center;
-  margin-block-start: 30px;
+}
+
+.card-save-button{
+  padding: 0;
+  pointer-events: none;
 }
 
 .card-save-button::after {
   content: "";
-  position: initial;
   background-color: #fff;
   mix-blend-mode: none;
   transform: none;
@@ -329,28 +312,33 @@ main {
   height: 39px;
 }
 .insert-floppy {
+  display: flex;
   gap: 20px;
   align-items: center;
   outline: none;
   padding: 0;
+  margin-block-end: 30px;
 }
-.dialog {
-  padding: 30px;
-  max-width: 353px;
-  position: absolute;
-  top: 40%;
-  z-index: 1;
-}
+
 
 .dialog[open]::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
+.dialog-content{
+  max-width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 /*Карточки +фильтр*/
 .card-img {
   filter: sepia(2) contrast(4) brightness(170);
+  height: 100%;
+  width: 100%;
 }
+
 
 .card-img-brightness {
   filter: brightness(200%);
@@ -380,15 +368,15 @@ main {
   filter: hue-rotate(-90deg);
 }
 
-/*tut*/
-
 .save-icon {
-  mix-blend-mode: difference; /* Не работает. Никто помочь не смог*/
+  mix-blend-mode: difference; /* Не работает. Никто помочь так и не смог. Не понимаю в чем может быть проблема*/
   color: #fff;
   z-index: 2;
-  width: 21px;
-  height: 21px;
+  width: 28px;
+  height: 28px;
+  position: relative;
 }
+
 
 /*Медиазапросы*/
 
@@ -397,29 +385,31 @@ main {
     inline-size: var(--mob-width);
     min-inline-size: 375px;
   }
-  .header{
+  .header {
     width: 100%;
   }
   .content-section {
     max-width: 100%;
   }
-
-  .img-logo img {
-    height: 100%;
-    width: 100%;
+  .card__text-button {
+    padding: 11px 20px;
   }
 
-
-  .card {
-    width: 100%;
+  .button-initial-styles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
 }
 
-@media (width <= 694px){
+@media (width <= 694px) {
   .img-logo img {
     height: 100%;
     width: 100%;
   }
+
   .card {
     width: 100%;
   }
