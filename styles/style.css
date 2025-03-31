@@ -10,11 +10,9 @@
 
 */
 
-/*Все недоработки и отличия от макета добью на второй доработке, если вдруг будет такой шанс =)*/
-
 .page {
   font-family: var(--main-font);
-  font-variation-settings: 'wght' var(--font-weight-card-text);
+  font-variation-settings: "wght" var(--font-weight-card-text);
   inline-size: var(--desktop-width);
   background-color: blanchedalmond;
   color: var(--font-color);
@@ -88,7 +86,7 @@ main {
   margin-block-start: 55px;
 }
 .card-title {
-  font-variation-settings: 'wght' var(--font-weight-card-title);
+  font-variation-settings: "wght" var(--font-weight-card-title);
   padding: 5px 10px;
   font-size: 18px;
 }
@@ -96,7 +94,6 @@ main {
   font-size: var(--card-font-size);
   padding: 21px 25px 3px 25px;
 }
-
 
 /*Лейбл*/
 .lable {
@@ -113,11 +110,12 @@ main {
   opacity: 0.5;
 }
 
-@supports (text-stroke: var(--text-stroke)) or (-webkit-text-stroke: var(--text-stroke)) {
+@supports (text-stroke: var(--text-stroke)) or
+  (-webkit-text-stroke: var(--text-stroke)) {
   .lable {
     text-stroke: var(--text-stroke);
     text-stroke: var(--text-stroke);
-    text-shadow:none;
+    text-shadow: none;
   }
 }
 
@@ -141,33 +139,23 @@ main {
   outline: initial;
 }
 
-/*Стилизация кнопки Like*/
-
 /*Стилизация нижней кнопки*/
 
 .card__text-button {
   font-family: var(--accent-font);
-  /*outline: var(--outline);*/
   font-family: var(--accent-font);
   font-size: var(--accent-font-button-size);
   text-align: left;
   line-height: 1.5em;
   display: flex;
   gap: 10px;
-  padding:18px 19px;
+  padding: 12px 17px;
   justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-
-.card__text-button:hover::after {
-  cursor: pointer;
-  transform: translateX(0);
-}
-
-
-.button-black-affect::after{
+.button-black-affect::after {
   content: "";
   display: block;
   height: 100%;
@@ -180,28 +168,16 @@ main {
   top: 0px;
 }
 
-
-
 /*Кнопки Like, Сохранить на память, OK*/
 
 .card__like-button:focus-visible {
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 2px 2px 0px 2px #000;
   transition: box-shadow 0.3s ease;
   outline: 2px solid #000;
 }
 
 .card__text-button:focus-visible {
-  box-shadow: 4px 4px 0 #000;
-  transition: box-shadow 0.3s ease;
-  outline: 2px solid #000;
-}
-
-
-
-
-
-.ok-button:focus-visible {
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 2px 2px 0px 2px #000;
   transition: box-shadow 0.3s ease;
   outline: 2px solid #000;
 }
@@ -249,8 +225,7 @@ main {
   align-items: center;
   background-color: var(--card-bg-color);
   margin-block-start: 54px;
-  margin-block-end:105px;
-
+  margin-block-end: 105px;
 }
 
 .button__text-floppy {
@@ -264,10 +239,6 @@ main {
   cursor: pointer;
   outline: 2px solid #000 !important;
 }
-
-
-
-
 
 .button__text::after:hover {
   transform: translateX(0%);
@@ -296,7 +267,7 @@ main {
   text-align: center;
 }
 
-.card-save-button{
+.card-save-button {
   padding: 0;
   pointer-events: none;
 }
@@ -321,13 +292,12 @@ main {
   margin-block-end: 30px;
 }
 
-
 .dialog[open]::backdrop {
   background-color: #000;
   opacity: 0.75;
 }
 
-.dialog-content{
+.dialog-content {
   max-width: 320px;
   box-sizing: border-box;
   padding: 20px;
@@ -339,7 +309,6 @@ main {
   height: 100%;
   width: 100%;
 }
-
 
 .card-img-brightness {
   filter: brightness(200%);
@@ -370,7 +339,7 @@ main {
 }
 
 .save-icon {
-  mix-blend-mode: difference; /* Не работает. Никто помочь так и не смог. Не понимаю в чем может быть проблема*/
+  mix-blend-mode: difference;
   color: #fff;
   z-index: 2;
   width: 28px;
@@ -378,13 +347,12 @@ main {
   position: relative;
 }
 
-.button-initial-styles{
+.button-initial-styles {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
-
 
 /*Медиазапросы*/
 
@@ -399,17 +367,21 @@ main {
   .content-section {
     max-width: 100%;
   }
-  .card__text-button {
-    padding: 11px 20px;
+
+  .dialog-content {
+    max-height: 161px;
   }
 
-  .button-initial-styles{
+  .lable {
+    right: 15px;
+  }
+
+  .button-initial-styles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media (width <= 694px) {
