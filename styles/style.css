@@ -143,7 +143,6 @@ main {
 
 .card__text-button {
   font-family: var(--accent-font);
-  font-family: var(--accent-font);
   font-size: var(--accent-font-button-size);
   text-align: left;
   line-height: 1.5em;
