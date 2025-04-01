@@ -85,14 +85,23 @@ main {
 .card:not(:first-child) {
   margin-block-start: 55px;
 }
+
 .card-title {
   font-variation-settings: "wght" var(--font-weight-card-title);
   padding: 5px 10px;
   font-size: 18px;
+  border-bottom: 2px solid #000;
 }
+
 .card-text {
   font-size: var(--card-font-size);
   padding: 21px 25px 3px 25px;
+  line-height: 21px;
+}
+
+.first-p {
+  border-top: 2px solid #000;
+  margin-top: -4px;
 }
 
 /*Лейбл*/
@@ -103,8 +112,6 @@ main {
   font-family: var(--accent-font);
   font-size: var(--accent-font-button-size);
   color: #000;
-  -webkit-text-stroke: var(--text-stroke);
-  text-stroke: var(--text-stroke);
   mix-blend-mode: hard-light;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
   opacity: 0.5;
@@ -129,7 +136,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  row-gap: 10px;
+  gap: 8px;
   margin-right: 25px;
   padding: 22px 2px;
   align-items: center;
@@ -262,7 +269,7 @@ main {
   width: 100%;
   text-transform: uppercase;
   outline: 2px solid #000;
-  padding: 8px 10px;
+  padding: 7px 10px;
   text-align: center;
 }
 
@@ -280,7 +287,7 @@ main {
 
 .floppy-icon {
   width: 39px;
-  height: 39px;
+  height: 36px;
 }
 .insert-floppy {
   display: flex;
@@ -299,7 +306,8 @@ main {
 .dialog-content {
   max-width: 320px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 16px;
+  max-height: 161px;
 }
 
 /*Карточки +фильтр*/
@@ -367,14 +375,17 @@ main {
     max-width: 100%;
   }
 
-  .dialog-content {
-    max-height: 161px;
+  .header {
+    padding: 121px 0;
   }
 
   .lable {
     right: 15px;
+    top: 21px;
   }
-
+  .card__text-button {
+    gap: 7px;
+  }
   .button-initial-styles {
     display: flex;
     flex-direction: column;

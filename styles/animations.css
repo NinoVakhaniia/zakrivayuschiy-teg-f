@@ -50,11 +50,15 @@
 }
 
 .like-icon {
-  width: 39px;
-  height: 36px;
+  width: 40px;
+  height: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card__icon-button {
+  padding: 0;
 }
 
 .like-icon:focus {
