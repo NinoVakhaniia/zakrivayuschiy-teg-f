@@ -214,13 +214,6 @@ main {
 
 /*Сохранение*/
 
-.footer {
-  grid-column: 2 / 2;
-  text-align: center;
-  margin-block-start: 52px;
-  margin-block-end: 103px;
-}
-
 .save-button-content {
   outline: var(--outline);
   max-inline-size: 335px;
