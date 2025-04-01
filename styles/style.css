@@ -114,7 +114,7 @@ main {
   (-webkit-text-stroke: var(--text-stroke)) {
   .lable {
     text-stroke: var(--text-stroke);
-    text-stroke: var(--text-stroke);
+    -webkit-text-stroke: var(--text-stroke);
     text-shadow: none;
   }
 }
