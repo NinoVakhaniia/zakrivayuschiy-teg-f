@@ -370,13 +370,10 @@ main {
   }
   .header {
     width: 100%;
+    padding: 121px 0;
   }
   .content-section {
     max-width: 100%;
-  }
-
-  .header {
-    padding: 121px 0;
   }
 
   .lable {
