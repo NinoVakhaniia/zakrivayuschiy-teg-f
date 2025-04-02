@@ -143,7 +143,7 @@ main {
   justify-content: end;
   gap: 6px;
   margin-right: 25px;
-  padding: 22px 2px;
+  padding: 22px 2px 24px 2px;
   align-items: center;
 }
 
@@ -382,9 +382,13 @@ main {
   }
   
   .elements {
-    margin-right: 29px;
+    margin-right: 26px;
+    padding: 22px 2px 27px 2px;
   }
-  
+  .card:not(:first-child) {
+    margin-block-start: 52px;
+}
+
   .save-icon-save{
     block-size: 28px !important;
     inline-size: auto !important;
@@ -401,8 +405,16 @@ main {
   }
   .card__text-button {
     gap: 7px;
-    padding: 12px 20px;
   }
+
+  .floppy-icon {
+    width: 43px;
+    height: 39px;
+}
+.button-save-mob{
+  padding: 12px 20px;
+}
+
   .button-initial-styles {
     display: flex;
     flex-direction: column;
