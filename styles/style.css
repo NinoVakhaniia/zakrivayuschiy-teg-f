@@ -385,6 +385,10 @@ main {
     block-size: 28px !important;
     inline-size: auto !important;
   }
+
+  .card-text {
+    padding: 21px 25px 3px 25px;
+  }
   
 
   .lable {
