@@ -104,7 +104,7 @@ main {
   margin-top: -4px;
 }
 
-.save-icon-save{
+.save-icon-save {
   block-size: 21px !important;
   inline-size: auto !important;
 }
@@ -380,16 +380,16 @@ main {
   .content-section {
     max-width: 100%;
   }
-  
+
   .elements {
     margin-right: 26px;
     padding: 22px 2px 27px 2px;
   }
   .card:not(:first-child) {
     margin-block-start: 52px;
-}
+  }
 
-  .save-icon-save{
+  .save-icon-save {
     block-size: 28px !important;
     inline-size: auto !important;
   }
@@ -397,7 +397,6 @@ main {
   .card-text {
     padding: 21px 25px 3px 25px;
   }
-  
 
   .lable {
     right: 15px;
@@ -410,10 +409,10 @@ main {
   .floppy-icon {
     width: 43px;
     height: 39px;
-}
-.button-save-mob{
-  padding: 12px 20px;
-}
+  }
+  .button-save-mob {
+    padding: 12px 20px;
+  }
 
   .button-initial-styles {
     display: flex;
@@ -421,8 +420,6 @@ main {
     justify-content: center;
     align-items: center;
   }
-
-  
 
   .dialog-content {
     padding: 18px 23px;
