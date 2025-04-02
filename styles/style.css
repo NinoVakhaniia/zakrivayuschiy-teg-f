@@ -74,7 +74,7 @@ main {
 }
 
 .content-section {
-  max-width: 700px;
+  max-width: 696px;
 }
 
 .card {
@@ -95,13 +95,18 @@ main {
 
 .card-text {
   font-size: var(--card-font-size);
-  padding: 21px 25px 3px 25px;
+  padding: 24px 25px 3px 25px;
   line-height: 21px;
 }
 
 .extra-border {
   border-top: 2px solid #000;
   margin-top: -4px;
+}
+
+.save-icon-save{
+  block-size: 21px !important;
+  inline-size: auto !important;
 }
 
 /*Лейбл*/
