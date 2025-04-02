@@ -24,8 +24,8 @@
   outline: var(--outline);
   position: relative;
   overflow: hidden;
-  inline-size: 130px;
-  block-size: 38px;
+  inline-size: 127px;
+  block-size: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +74,7 @@
   color: #fff;
   position: relative;
   z-index: 2;
+  font-size: var(--accent-font-button-size);
 }
 
 /*Анимация :hover*/
@@ -155,6 +156,7 @@
   }
   to {
     scale: 1.25;
+
   }
 }
 

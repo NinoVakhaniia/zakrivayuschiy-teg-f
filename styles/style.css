@@ -141,7 +141,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 8px;
+  gap: 6px;
   margin-right: 25px;
   padding: 22px 2px;
   align-items: center;
@@ -160,7 +160,7 @@ main {
   line-height: 1.5em;
   display: flex;
   gap: 10px;
-  padding: 12px 17px;
+  padding: 17px 20px;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -380,7 +380,11 @@ main {
   .content-section {
     max-width: 100%;
   }
-
+  
+  .elements {
+    margin-right: 29px;
+  }
+  
   .save-icon-save{
     block-size: 28px !important;
     inline-size: auto !important;
@@ -397,6 +401,7 @@ main {
   }
   .card__text-button {
     gap: 7px;
+    padding: 12px 20px;
   }
   .button-initial-styles {
     display: flex;
@@ -404,6 +409,8 @@ main {
     justify-content: center;
     align-items: center;
   }
+
+  
 
   .dialog-content {
     padding: 18px 23px;
