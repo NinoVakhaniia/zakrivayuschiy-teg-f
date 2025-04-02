@@ -99,7 +99,7 @@ main {
   line-height: 21px;
 }
 
-.first-p {
+.extra-border {
   border-top: 2px solid #000;
   margin-top: -4px;
 }
@@ -279,8 +279,8 @@ main {
 }
 
 .floppy-icon {
-  width: 39px;
-  height: 36px;
+  width: 41px;
+  height: 38px;
 }
 .insert-floppy {
   display: flex;
@@ -288,19 +288,26 @@ main {
   align-items: center;
   outline: none;
   padding: 0;
-  margin-block-end: 30px;
+  margin-block-end: 32px;
+  font-family: var(--accent-font);
+  line-height: 21px;
 }
 
 .dialog[open]::backdrop {
   background-color: #000;
   opacity: 0.75;
+  padding: 0;
 }
 
 .dialog-content {
-  max-width: 320px;
+  max-width: 325px;
   box-sizing: border-box;
-  padding: 16px;
-  max-height: 161px;
+  margin: 13px;
+  padding: 16px 15px;
+}
+
+.dialog {
+  padding: 0;
 }
 
 /*Карточки +фильтр*/
@@ -381,6 +388,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .dialog-content {
+    padding: 18px 23px;
   }
 }
 
