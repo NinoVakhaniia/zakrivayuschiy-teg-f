@@ -381,6 +381,12 @@ main {
     max-width: 100%;
   }
 
+  .save-icon-save{
+    block-size: 28px !important;
+    inline-size: auto !important;
+  }
+  
+
   .lable {
     right: 15px;
     top: 21px;
